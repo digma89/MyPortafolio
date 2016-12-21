@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="DR">
+    <title>
+        <%= title %>
+    </title>
+
+
+<style>
+        body {
+            margin: 0;
+            background: #000;
+        }
+        
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+            /*  background: url('.jpg') no-repeat;*/
+            background-size: cover;
+            transition: 1s opacity;
+        }
+        
+        @media screen and (max-width: 500px) {
+            div {
+                width: 70%;
+            }
+        }
+        
+        @media screen and (max-device-width: 800px) {
+            html {
+                /*  background: url(.jpg) #000 no-repeat center center fixed;*/
+            }
+            #bgvid {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div ng-include="'example/views/templates/header.client.view.html'"> </div>
+
+        <h1><%= title %></h1>
+
+        <section ng-view></section>
+
+        <script type="text/javascript" src="/lib/angular/angular.js"></script>
+        <script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="/application.js"></script>
+
+
+        <script type="text/javascript" src="/example/example.client.module.js"></script>
+        <script type="text/javascript" src="/example/controllers/home.client.controller.js"></script>
+        <script type="text/javascript" src="/example/config/example.client.routes.js"></script>
+
+        <div ng-include="'example/views/templates/footer.client.view.html'"> </div>
+    </div>
+    <!--/#Wrapper-->
+</body>
+
+</html>
