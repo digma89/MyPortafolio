@@ -1,6 +1,6 @@
 var mainApplicationModuleName = 'mean';
 
-var mainApplicationModule = angular.module(mainApplicationModuleName, ['ngRoute','example']);
+var mainApplicationModule = angular.module(mainApplicationModuleName, ['ngRoute', 'example']);
 
 mainApplicationModule.config(['$locationProvider',
     function($locationProvider) {
@@ -8,7 +8,6 @@ mainApplicationModule.config(['$locationProvider',
     }
 ]);
 
-angular.element(document).ready(function(){
+angular.element(document).ready(function() {
     angular.bootstrap(document, [mainApplicationModuleName]);
 });
-

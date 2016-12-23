@@ -1,20 +1,22 @@
-/*process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-
+/*--By Diego Rodriguez 12/22/16
+    Title: MyPortafolio
+    Changed to deploy   
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var express = require('./config/express');
 var app = express();
-
-
-
-
-
-    
 app.listen(3000);
-console.log('Server running at http://localhost:3000/');*/
+console.log('Server running at http://localhost:3000/');
+*/
+
 
 
 /**
  * Module dependencies.
  */
+
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+
 var express = require('./config/express');
 var app = express();
 var debug = require('debug')('New folder (3):server');
@@ -23,6 +25,7 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
+
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
@@ -33,6 +36,7 @@ app.set('port', port);
 
 var server = http.createServer(app);
 console.log('Server running at http://localhost:3000/');
+
 /**
  * Listen on provided port, on all network interfaces.
  */
@@ -100,3 +104,5 @@ function onListening() {
         'port ' + addr.port;
     debug('Listening on ' + bind);
 }
+
+module.exports = app; // for testing
