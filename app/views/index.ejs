@@ -8,126 +8,16 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-
-    <style>
-        /* Style for our header texts
-	* --------------------------------------- */
-        
-        .title_section0 {
-            font-size: 5em;
-            font-family: arial, helvetica;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .subTitle_section0 {
-            font-family: arial, helvetica;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        /* Centered texts in each section
-	* --------------------------------------- */
-        
-        .section {
-            text-align: center;
-            overflow: hidden;
-        }
-        
-        #myVideo {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background-size: 100% 100%;
-            background-color: black;
-            /* in case the video doesn't fit the whole page
-            background-image: /* our video 
-            ;*/
-            background-position: center center;
-            background-size: contain;
-            object-fit: cover;
-            /*cover video background */
-            z-index: 3;
-            background-attachment: scroll;
-        }
-        /* Layer with position absolute in order to have it over the video
-	* --------------------------------------- */
-        
-        #section0 .layer {
-            position: absolute;
-            z-index: 4;
-            width: 100%;
-            left: 0;
-            top: 43%;
-            /* 
-		* Preventing flicker on some browsers 
-		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
-		*/
-            -webkit-transform: translate3d(0, 0, 0);
-            -ms-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-        /*solves problem with overflowing video in Mac with Chrome */
-        
-        #section0 {
-            overflow: hidden;
-        }
-        /* Bottom menu
-	* --------------------------------------- */
-        
-        #infoMenu li a {
-            color: #fff;
-        }
-        /* Hiding video controls 
-	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
-	* --------------------------------------- */
-        
-        video::-webkit-media-controls {
-            display: none !important;
-        }
-        /* Overwriting fullPage.js tooltip color
-	* --------------------------------------- */
-        
-        .fp-tooltip {
-            color: #AAA;
-        }
-        
-        #fp-nav span,
-        .fp-slidesNav span {
-            border-color: #AAA;
-        }
-        
-        #fp-nav li .active span,
-        .fp-slidesNav .active span {
-            background: #AAA;
-        }
-    </style>
-
-    <!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
 
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/portafolio.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                verticalCentered: true,
-                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
-            });
-        });
-    </script>
+
 
 </head>
 
@@ -137,21 +27,17 @@
     <div id="fullpage">
         <div class="section " id="section0">
             <video poster="assets/imgs/background.png" id="myVideo" loop muted data-autoplay>
-			<source src="assets/video/b.mp4" type="video/mp4">
-			<source src="assets/video/b.webm" type="video/webm">
-		</video>
+                <source src="assets/video/b.mp4" type="video/mp4">
+                <source src="assets/video/b.webm" type="video/webm">
+		    </video>
             <div class="layer">
                 <h1 class="title_section0">Diego Rodríguez</h1>
                 <h3 class="subTitle_section0">Software Engineer</h3>
             </div>
         </div>
         <div class="section" id="section1">
-            <div class="slide" id="slide1">
-                <h1>Slide Backgrounds</h1>
-            </div>
-            <div class="slide" id="slide2">
-                <h1>Totally customizable</h1>
-            </div>
+            <h1>Slide Backgrounds</h1>
+            <h1>Totally customizable</h1>
         </div>
         <div class="section" id="section2">
             <h1>Lovely images <br />for a lovely page</h1>
@@ -161,22 +47,7 @@
         </div>
     </div>
 
-    <div id="fp-nav" class="right" style="margin-top: -43.5px;">
-        <ul>
-            <li><a href="#" class="active"><span></span></a>
-                <div class="fp-tooltip right">fullPage.js</div>
-            </li>
-            <li><a href="#" class=""><span></span></a>
-                <div class="fp-tooltip right">Powerful</div>
-            </li>
-            <li><a href="#" class=""><span></span></a>
-                <div class="fp-tooltip right">Amazing</div>
-            </li>
-            <li><a href="#" class=""><span></span></a>
-                <div class="fp-tooltip right">Simple</div>
-            </li>
-        </ul>
-    </div>
+
 
 
 
