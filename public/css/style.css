@@ -3,14 +3,16 @@
    
    .title_section0 {
        font-size: 5em;
-       font-family: arial, helvetica;
+       font-family: Roboto, arial, helvetica;
+       font-weight: 300;
        color: #fff;
        margin: 0;
        padding: 0;
    }
    
    .subTitle_section0 {
-       font-family: arial, helvetica;
+       font-family: Roboto, arial, helvetica;
+       font-weight: 300;
        color: #fff;
        margin: 0;
        padding: 0;
@@ -85,12 +87,27 @@
        color: #AAA;
    }
    
-   #fp-nav span,
-   .fp-slidesNav span {
+   #fp-nav ul li a span,
+   .fp-slidesNav ul li a span {
        border-color: #AAA;
+       background: #FFF;
    }
    
    #fp-nav li .active span,
    .fp-slidesNav .active span {
        background: #FFF;
+   }
+   /*   Home    */
+   
+   .picture {
+       border-radius: 3px;
+   }
+   
+   .about_Title {
+       font-size: 4em;
+       font-family: Roboto, arial, helvetica;
+       font-weight: 300;
+       color: #fff;
+       margin: 0;
+       padding: 0;
    }
