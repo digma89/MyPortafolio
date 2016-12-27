@@ -23,6 +23,7 @@
    .section {
        text-align: center;
        overflow: hidden;
+       padding: 50px;
    }
    
    #myVideo {
@@ -84,23 +85,79 @@
 	* --------------------------------------- */
    
    .fp-tooltip {
-       color: #AAA;
+       color: #000;
    }
    
    #fp-nav ul li a span,
    .fp-slidesNav ul li a span {
-       border-color: #AAA;
-       background: #FFF;
+       border-color: #000;
+       background: #000;
    }
    
    #fp-nav li .active span,
    .fp-slidesNav .active span {
-       background: #FFF;
+       background: #000;
    }
-   /*   Home    */
+   /* Backgrounds will cover all the section
+	* --------------------------------------- */
+   /* .section {
+       background-size: cover;
+   }
+   /* Defining each section background and styles
+	* --------------------------------------- */
+   /* #section1 {
+       background-image: url(../assets/imgs/2.jpg);
+   }*/
+   /************************************************
+    *****************  General ************************/
    
    .picture {
        border-radius: 3px;
+   }
+   
+   .responsive {
+       max-width: 100%;
+   }
+   
+   .pageFooter {
+       position: absolute;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       padding: 1rem;
+   }
+   
+   .socialLinks {
+       margin: 10px;
+       font-size: 25px;
+       color: #000
+   }
+   /************************************************
+    *****************  Home ************************/
+   
+   .mainDiv {
+       width: 90%;
+       margin: auto
+   }
+   
+   .leftDiv {
+       width: 33%;
+       float: left;
+   }
+   
+   .rigthDiv {
+       width: 63%;
+       float: right;
+   }
+   
+   .canvasGraph {
+       max-width: inherit;
+       max-height: inherit;
+       /*max-height: 400px;*/
+       color: #fff;
+       padding: 20px;
+       border-radius: 3px;
+       margin: auto;
    }
    
    .about_Title {
@@ -109,5 +166,50 @@
        font-weight: 300;
        color: #fff;
        margin: 0;
+       padding: 0;
+   }
+   
+   .about_Text {
+       font-size: 1.2em;
+       font-family: Roboto, arial, helvetica;
+       font-weight: 100;
+       color: #fff;
+       margin: 0;
+       padding: 0;
+   }
+   
+   .about_subTitle {
+       font-size: 2em;
+       font-family: Roboto, arial, helvetica;
+       font-weight: 100;
+       color: #fff;
+       margin-bottom: 20px;
+       padding: 0;
+   }
+   
+   .about_Title_b {
+       font-size: 4em;
+       font-family: Roboto, arial, helvetica;
+       font-weight: 300;
+       color: #000;
+       margin: 0;
+       padding: 50px;
+   }
+   
+   .about_Text_b {
+       font-size: 1.2em;
+       font-family: Roboto, arial, helvetica;
+       font-weight: 100;
+       color: #000;
+       margin: 0;
+       padding: 0;
+   }
+   
+   .about_subTitle_b {
+       font-size: 2em;
+       font-family: Roboto, arial, helvetica;
+       font-weight: 100;
+       color: #000;
+       margin-bottom: 20px;
        padding: 0;
    }
