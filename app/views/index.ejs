@@ -10,11 +10,20 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
 
+    <!--<script src="js/scrolloverflow.min.js"></script>-->
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="js/portafolio.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+
+    <!--<script src="js/jquery.slimscroll.js"></script>-->
 
 </head>
 
@@ -33,6 +42,7 @@
         <div class="section" id="section1">
 
             <h1 class="about_Title_b">About</h1>
+
             <!-- <div style="background-color: #FFF;height: 2px;width: 60%;margin:20px auto 40px auto; "></div> -->
             <div class="leftDiv">
                 <h3 class="about_subTitle_b">Me</h3>
@@ -42,53 +52,105 @@
             </div>
             <div id="rigthDivId" class="rigthDiv">
                 <h3 class="about_subTitle_b">My skills</h3>
-
                 <canvas id="myChart"></canvas>
-
-                <!--    <img class="picture responsive" src="assets/imgs/chart1.png">-->
-
             </div>
 
-            <div class="pageFooter">
-                <a class="socialLinks" href=""><i class="fa fa-github"></i></a>
-                <a class="socialLinks" href=""><i class="fa fa-linkedin" ></i></a>
+            <div class="pageFooter1">
+                <a class="socialLinks" href="https://github.com/digma89"><i class="fa fa-github"></i></a>
+                <a class="socialLinks" href="https://www.linkedin.com/in/diego-rodr%C3%ADguez-283ba5126"><i class="fa fa-linkedin" ></i></a>
             </div>
         </div>
         <div class="section" id="section2">
-            <div style="width: 90%; margin:auto">
-                <h1 class="about_Title_b">About</h1>
-                <div style="background-color: #000;height: 2px;width: 60%;margin:20px auto 40px auto; "></div>
-                <div style="width: 33%;float:left;">
-                    <h3 class="about_subTitle_b">Me</h3>
-                    <img class="picture" src="assets/imgs/pic.png">
+            <h1 class="about_Title_b">Portafolio</h1>
 
-                    <p class="about_Text_b">I’m a software developer based on Toronto, passionate about software and technology, love front and back end development likewise, however more important interested in problem solving.</p>
-                </div>
-                <div style="width: 63%;float:right;">
-                    <h3 class="about_subTitle_b">Skills</h3>
-                    <div style="max-width: 500px;  max-height:500px; background-color:#FFF;padding:20px;border-radius: 3px;  ">
-                        <canvas id="myChart"></canvas>
+
+            <ul class="portfolio-filter text-center">
+                <li><a class="btn btn-default active" href="#" data-filter="*">All Works</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".web">Web</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".android">Andorid</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".java">Java</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".games">Games</a></li>
+            </ul>
+            <!--/#portfolio-filter-->
+            <section>
+                <div class="row" style="width: 90%; margin:auto ">
+                    <div class="portfolio-items">
+                        <div class="portfolio-item web col-xs-3 col-sm-3 col-md-3 .col-lg-3 .col-xl-3 nopadding">
+                            <div class="recent-work-wrap">
+                                <img src="images/portfolio/recent/avaluosN.png" alt="">
+                                <div class="overlay">
+                                    <div class="recent-work-inner">
+                                        <h3>Avaluos Naufal website</h3>
+                                        <a class="preview" href="/projects/1001"><i class="fa fa-eye"></i> View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.portfolio-item-->
+
+                        <div class="portfolio-item android col-xs-3 col-sm-3 col-md-3 .col-lg-3 .col-xl-3 nopadding">
+                            <div class="recent-work-wrap">
+                                <img src="images/portfolio/recent/item2.png" alt="">
+                            </div>
+                        </div>
+                        <!--/.portfolio-item-->
+
+                        <div class="portfolio-item col-xs-3 col-sm-3 col-md-3 .col-lg-3  .col-xl-3 nopadding">
+                            <div class="recent-work-wrap">
+                                <img src="images/portfolio/recent/item3.png" alt="">
+                            </div>
+                        </div>
+                        <!--/.portfolio-item-->
+
+                        <div class="portfolio-item android col-xs-3 col-sm-3 col-md-3 .col-lg-3 .col-xl-3 nopadding">
+                            <div class="recent-work-wrap">
+                                <img src="images/portfolio/recent/item4.png" alt="">
+                            </div>
+                        </div>
+                        <!--/.portfolio-item-->
+
+                        <div class="portfolio-item android col-xs-3 col-sm-3 col-md-3 .col-lg-3  .col-xl-3 nopadding">
+                            <div class="recent-work-wrap">
+                                <img src="images/portfolio/recent/item5.png" alt="">
+                            </div>
+                        </div>
+                        <!--/.portfolio-item-->
+
+                        <div class="portfolio-item java col-xs-3 col-sm-3 col-md-3 .col-lg-3 .col-xl-3 nopadding">
+                            <div class="recent-work-wrap">
+                                <img src="images/portfolio/recent/item6.png" alt="">
+                            </div>
+                        </div>
+                        <!--/.portfolio-item-->
+
+                        <div class="portfolio-item java col-xs-3 col-sm-3 col-md-3 .col-lg-3 .col-xl-3 nopadding">
+                            <div class="recent-work-wrap">
+                                <img src="images/portfolio/recent/item7.png" alt="">
+                            </div>
+                        </div>
+                        <!--/.portfolio-item-->
+
+                        <div class="portfolio-item java col-xs-3 col-sm-3 col-md-3 .col-lg-3 .col-xl-3 nopadding">
+                            <div class="recent-work-wrap">
+                                <img src="images/portfolio/recent/item8.png" alt="">
+                            </div>
+                        </div>
+                        <!--/.portfolio-item-->
                     </div>
-                    <!-- <img class="picture responsive" src="assets/imgs/chart.png"> -->
-
                 </div>
-            </div>
-            <div style="position: absolute; right: 0;  bottom: 0;  left: 0;  padding: 1rem;">
-                <a style="margin:5px;" href=""><i class="fa fa-github" aria-hidden="true" style="color:#000"></i></a>
-                <a style="margin:5px;" href=""><i class="fa fa-linkedin" style="color:#000"></i></a>
+            </section>
+            <!--/#portfolio-item-->
+
+            <div class="pageFooter">
+                <a class="socialLinks" href="https://github.com/digma89"><i class="fa fa-github"></i></a>
+                <a class="socialLinks" href="https://www.linkedin.com/in/diego-rodr%C3%ADguez-283ba5126"><i class="fa fa-linkedin" ></i></a>
             </div>
         </div>
         <div class="section" id="section3">
-            <div style="max-width: 500px;  max-height:500px; background-color:#FFF;padding:20px;border-radius: 3px;  ">
-                <canvas id="myChart" max-width="100px" max-height="200px"></canvas></div>
-            <h1>One Image = One thousand words</h1>
+            <h1>Hola mundo </h1>
         </div>
+
     </div>
-
-
-    <script>
-    </script>
-
 
 </body>
 
