@@ -1,0 +1,23 @@
+<section id="projects" style="height:850px">
+    <!-- projects slider -->
+    <div>
+        <div class="sliderR" style="margin-top:90px; margin-bottom:40px;">
+            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                    <img ng-src="{{slide.image}}" class="img-carousel-b">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/#projects-slider-->
+    <div style="	text-align: justify; width: 80%; margin:auto; ">
+        <h3 class="proyectosFont1">{{info.proyecto}}</h3>
+        <p style="font-size:17px"><b class="proyectosFont">Cliente:</b> {{info.cliente}} /
+            <b class="proyectosFont">Ubicación: </b>{{info.ubicacion}} /
+            <b class="proyectosFont">Área: </b>{{info.area}} /
+            <b class="proyectosFont">Tipo: </b>{{info.tipo}} /
+            <b class="proyectosFont">Estatus: </b>{{info.estatus}}
+        </p>
+    </div>
+
+</section>
