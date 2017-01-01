@@ -2,7 +2,6 @@
              createChart(500);
              portafolio();
              createChart(500);
-
          });
 
          $(document).ready(function() {

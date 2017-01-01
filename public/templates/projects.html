@@ -1,7 +1,8 @@
-<section id="projects" style="height:850px">
+<section id="projects">
+    <h1 class="projects_Title_b">Projects</h1>
     <!-- projects slider -->
     <div>
-        <div class="sliderR" style="margin-top:90px; margin-bottom:40px;">
+        <div class="sliderR">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                 <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
                     <img ng-src="{{slide.image}}" class="img-carousel-b">
@@ -10,14 +11,17 @@
         </div>
     </div>
     <!--/#projects-slider-->
-    <div style="	text-align: justify; width: 80%; margin:auto; ">
-        <h3 class="proyectosFont1">{{info.proyecto}}</h3>
-        <p style="font-size:17px"><b class="proyectosFont">Cliente:</b> {{info.cliente}} /
-            <b class="proyectosFont">Ubicación: </b>{{info.ubicacion}} /
-            <b class="proyectosFont">Área: </b>{{info.area}} /
-            <b class="proyectosFont">Tipo: </b>{{info.tipo}} /
-            <b class="proyectosFont">Estatus: </b>{{info.estatus}}
-        </p>
+    <div class="projects_main">
+        <h3>{{info.proyecto}}</h3>
+        <div class="proyectosFont">
+            <p><b>The app:</b> {{info.app}} </p>
+            <p><b>The technologies: </b>{{info.technologies}} </p>
+            <p><b>The link: </b><a href="{{info.link}}">{{info.link}}</a></p>
+        </div>
     </div>
-
+    <div class="projects_padding">
+        <ul class="portfolio-filter text-center">
+            <li><a class="btn btn-default" data-ng-click="backLinkClick()" href="/">Back</a></li>
+        </ul>
+    </div>
 </section>

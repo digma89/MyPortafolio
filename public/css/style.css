@@ -84,7 +84,8 @@
    /* Overwriting fullPage.js tooltip color
 	* --------------------------------------- */
    
-   .fp-tooltip {
+   #fp-nav ul li .fp-tooltip {
+       /*menu font color*/
        color: #000;
    }
    
@@ -110,6 +111,11 @@
    }*/
    /************************************************
     *****************  General ************************/
+   
+   body {
+       font-weight: 100;
+       font-family: Roboto, arial, helvetica;
+   }
    
    .picture {
        border-radius: 3px;
@@ -344,31 +350,8 @@
        padding-bottom: 70px;
    }
    
-   .recent-work-wrap {
-       position: relative;
-       max-width: 250px;
-   }
-   
    .recent-work-wrap img {
        width: 100%;
-   }
-   
-   .recent-work-wrap .recent-work-inner {
-       top: 0;
-       background: transparent;
-       opacity: .8;
-       width: 100%;
-       border-radius: 0;
-       margin-bottom: 0;
-   }
-   
-   .recent-work-wrap .recent-work-inner h3 {
-       margin: 10px 0;
-   }
-   
-   .recent-work-wrap .recent-work-inner h3 a {
-       font-size: 24px;
-       color: #fff;
    }
    
    .recent-work-wrap .overlay {
@@ -379,14 +362,12 @@
        height: 100%;
        opacity: 0;
        border-radius: 0;
-       background: #537CCD;
        color: #fff;
        vertical-align: middle;
        -webkit-transition: opacity 500ms;
        -moz-transition: opacity 500ms;
        -o-transition: opacity 500ms;
        transition: opacity 500ms;
-       padding: 30px;
    }
    
    .recent-work-wrap .overlay .preview {
@@ -395,11 +376,156 @@
        height: 35px;
        line-height: 35px;
        border-radius: 0;
-       background: transparent;
        text-align: center;
        color: #fff;
    }
    
    .recent-work-wrap:hover .overlay {
        opacity: 1;
+   }
+   /*************************
+********* Projects ******
+**************************/
+   
+   .proyectosFont {
+       font-family: Roboto, arial, helvetica;
+       font-size: 17px;
+       font-weight: 100;
+   }
+   
+   .projects_Title_b {
+       font-size: 4em;
+       font-family: Roboto, arial, helvetica;
+       font-weight: 300;
+       color: #000;
+       margin: 0;
+       padding: 30px;
+       text-align: center;
+   }
+   
+   .img-carousel-b {
+       width: 100%;
+   }
+   
+   .sliderR {
+       width: 60%;
+       margin: auto;
+       margin-bottom: 40px;
+   }
+   
+   .carousel-indicators li {
+       background-color: #fff !important;
+       border: 1px solid #000 !important;
+   }
+   
+   .projects_main {
+       width: 40%;
+       margin: auto;
+   }
+   
+   .projects_padding {
+       padding: 20px;
+   }
+   /*************************
+********* Responsice CSS ******
+**************************/
+   /* lg */
+   
+   @media (min-width: 1200px) {
+       /*************************
+********* Portfolio CSS ******
+**************************/
+       .project_title {
+           font-family: Roboto, arial, helvetica;
+           font-size: 21px;
+       }
+       .project_view {
+           font-family: Roboto, arial, helvetica;
+           font-size: 10px;
+       }
+       .recent-work-wrap {
+           position: relative;
+           max-width: 250px;
+           height: 140px;
+       }
+   }
+   /* md */
+   
+   @media (min-width: 992px) and (max-width: 1199px) {
+       /*************************
+********* Portfolio CSS ******
+**************************/
+       .project_title {
+           font-size: 18px;
+           font-family: Roboto, arial, helvetica;
+       }
+       .project_view {
+           font-size: 10px;
+           font-family: Roboto, arial, helvetica;
+       }
+       .recent-work-wrap {
+           position: relative;
+           max-width: 250px;
+           height: 140px;
+       }
+   }
+   /* sm */
+   
+   @media (min-width: 768px) and (max-width: 991px) {
+       /*************************
+********* Portfolio CSS ******
+**************************/
+       .project_title {
+           font-size: 16px;
+           font-family: Roboto, arial, helvetica;
+       }
+       .project_view {
+           font-size: 8px;
+           font-family: Roboto, arial, helvetica;
+       }
+       .recent-work-wrap {
+           position: relative;
+           max-width: 250px;
+           height: 130px;
+       }
+   }
+   /* xs */
+   
+   @media (max-width: 767px) {
+       /*************************
+********* Portfolio CSS ******
+**************************/
+       .project_title {
+           font-size: 10px;
+           font-family: Roboto, arial, helvetica;
+       }
+       .project_view {
+           font-size: 6px;
+           font-family: Roboto, arial, helvetica;
+       }
+       .recent-work-wrap {
+           position: relative;
+           max-width: 250px;
+           height: 120px;
+       }
+   }
+   /* XS Portrait */
+   
+   @media (max-width: 480px) {
+       /*************************
+********* Portfolio CSS ******
+**************************/
+       .project_title {
+           font-size: 8px;
+           font-family: Roboto, arial, helvetica;
+       }
+       .project_view {
+           font-size: 4px;
+           font-family: Roboto, arial, helvetica;
+       }
+       .recent-work-wrap {
+           position: relative;
+           max-width: 250px;
+           height: 100px;
+       }
    }
