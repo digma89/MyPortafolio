@@ -4,7 +4,7 @@
 <head>
 
     <title>Diego Rodríguez</title>
-
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
@@ -46,13 +46,21 @@
             <!-- <div style="background-color: #FFF;height: 2px;width: 60%;margin:20px auto 40px auto; "></div> -->
             <div class="leftDiv">
                 <h3 class="about_subTitle_b">Me</h3>
-                <img class="picture" src="assets/imgs/pic.png">
 
-                <p class="about_Text_b">I’m a software developer based on Toronto, passionate about software and technology, love front and back end development likewise, however more important interested in problem solving.</p>
+                <div class="w3-panel w3-card-16">
+                    <img src="assets/imgs/pic.png" style="width:25%; padding:5px;" class="w3-circle">
+                    <p class="about_Text_b">I’m a software developer based on Toronto, passionate about software and technology, love front and back end development likewise, however more important interested in problem solving.</p>
+
+                </div>
+
+
+
             </div>
             <div id="rigthDivId" class="rigthDiv">
                 <h3 class="about_subTitle_b">My skills</h3>
-                <canvas id="myChart"></canvas>
+                <div class="canvas_div">
+                    <canvas id="myChart"></canvas>
+                </div>
             </div>
 
             <div class="pageFooter">
@@ -71,9 +79,9 @@
                 <li><a class="btn btn-default" href="#" data-filter=".game">Games</a></li>
             </ul>
             <!--/#portfolio-filter-->
-            <section>
-                <div class="row" style="width: 90%; margin:auto ">
-                    <div class="portfolio-items">
+            <div>
+                <div class="row" style="width: 80%; margin:auto ">
+                    <div class="portfolio-items text-center" style="margin:auto;">
                         <div class="portfolio-item java col-xs-3 col-sm-3 col-md-3 .col-lg-3 .col-xl-3 nopadding">
                             <div class="recent-work-wrap">
                                 <p class="project_title">Samsung Heroes</p>
@@ -172,7 +180,7 @@
                         <!--/.portfolio-item-->
                     </div>
                 </div>
-            </section>
+            </div>
             <!--/#portfolio-item-->
 
             <div class="pageFooter">
@@ -180,10 +188,6 @@
                 <a class="socialLinks" href="https://www.linkedin.com/in/diego-rodr%C3%ADguez-283ba5126"><i class="fa fa-linkedin" ></i></a>
             </div>
         </div>
-        <div class="section" id="section3">
-            <h1>Hola mundo </h1>
-        </div>
-
     </div>
 
 </body>

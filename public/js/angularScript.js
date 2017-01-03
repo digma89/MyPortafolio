@@ -34,9 +34,9 @@
           $scope.addSlide = function() {
               var newWidth = 600 + slides.length + 1;
               $scope.info = {
-                  proyecto: "Avaluos Naufal Website",
-                  app: "A complete and responsive website for the company Avalúos Corporativo Naufal, company that provides valuation and real estate services.",
-                  technologies: "NodeJs, HTML5, JQuery, CSS3 and Bootstrap.",
+                  proyecto: "Avalúos Corporativo Naufal Website",
+                  app: "A complete responsive website for the company Avalúos Corporativo Naufal, company that provides valuation and real estate services.",
+                  technologies: "HTML5, CSS3, NodeJs, JQuery and Bootstrap.",
                   link: "https://anaufalv2.herokuapp.com/"
               };
 
@@ -59,12 +59,10 @@
           $scope.addSlide = function() {
               var newWidth = 600 + slides.length + 1;
               $scope.info = {
-                  proyecto: "Baño SR",
-                  app: "Gobierno + Privado",
-                  technologies: "Colonia Guerrero México D.F.",
-                  link: "16,806 m\u00b2",
-                  tipo: "Comercial",
-                  estatus: "Proyecto."
+                  proyecto: "Lost Sword",
+                  app: "Interactive fiction game, coded with impress.js presentation framework, based on the power of CSS3 transforms and transitions.",
+                  technologies: "HTML5, CSS3, JavaScript, Impress.js.",
+                  link: "http://digma89.github.io/The_lost_sword/The_Lost_Sword/index.html"
               };
 
               slides.push({
@@ -85,12 +83,10 @@
           $scope.addSlide = function() {
               var newWidth = 600 + slides.length + 1;
               $scope.info = {
-                  proyecto: "Torre Guerrero",
-                  app: "Gobierno + Privado",
-                  technologies: "Colonia Guerrero México D.F.",
-                  link: "16,806 m\u00b2",
-                  tipo: "Habitacional + Comercial + Cultural",
-                  estatus: "Proyecto en concurso - En exposicion Bienal de Arquitectura de Venecia 2014."
+                  proyecto: "T8cho Website",
+                  app: "A complete responsive website for the company T8cho, company of architects and interior designers.",
+                  technologies: "HTML5, CSS3, NodeJs, AngularJs and Bootstrap.",
+                  link: "https://t8cho.herokuapp.com/"
               };
 
               slides.push({
@@ -120,12 +116,10 @@
           $scope.addSlide = function() {
               var newWidth = 600 + slides.length + 1;
               $scope.info = {
-                  proyecto: 'Restaurante "Condimento" Marriott ',
-                  app: "Gobierno + Privado",
-                  technologies: "Colonia Guerrero México D.F.",
-                  link: "16,806 m\u00b2",
-                  tipo: "Comercial",
-                  estatus: "Proyecto entregado."
+                  proyecto: 'Old Portfolio',
+                  app: "My first portfolio, just playing around with NodeJs and Bootstrap.",
+                  technologies: "HTML5, CSS3, NodeJs and Bootstrap.",
+                  link: "https://dr-old-portafolio.herokuapp.com/",
               };
 
               slides.push({
@@ -149,12 +143,10 @@
           $scope.addSlide = function() {
               var newWidth = 600 + slides.length + 1;
               $scope.info = {
-                  proyecto: "Clínica dental Blu",
-                  app: "Gobierno + Privado",
-                  technologies: "Colonia Guerrero México D.F.",
-                  link: "16,806 m\u00b2",
-                  tipo: "Comercial",
-                  estatus: "Construido."
+                  proyecto: "Alien Quest",
+                  app: "2D platformer with three different levels, your character is an alien and the goal of the game is pick as much coins as you can.",
+                  technologies: "C#, Unity.",
+                  link: "http://alienquest.azurewebsites.net/"
               };
 
               slides.push({
@@ -179,12 +171,10 @@
           $scope.addSlide = function() {
               var newWidth = 600 + slides.length + 1;
               $scope.info = {
-                  proyecto: "Globo Studios",
-                  app: "Gobierno + Privado",
-                  technologies: "Colonia Guerrero México D.F.",
-                  link: "16,806 m\u00b2",
-                  tipo: "Diseño de interiores",
-                  estatus: "Construido."
+                  proyecto: "T&J Chase",
+                  app: "Side-scrolling web video game with three levels of difficulty, based on the Tom and Jerry adventures.",
+                  technologies: "CreateJs, JavaScript, TypeScript.",
+                  link: "http://tandj.azurewebsites.net/"
               };
               slides.push({
                   image: '../assets/imgs/slider/Proyecto6/6-1.png',
@@ -204,12 +194,10 @@
           $scope.addSlide = function() {
               var newWidth = 600 + slides.length + 1;
               $scope.info = {
-                  proyecto: "Terraza Senado",
-                  app: "Gobierno + Privado",
-                  technologies: "Colonia Guerrero México D.F.",
-                  link: "16,806 m\u00b2",
-                  tipo: "Mobiliario urbano",
-                  estatus: "Concurso."
+                  proyecto: "MP3 Setter",
+                  app: "Java program to set the MP3 tags of a group of files according to the filenames, or change the file's name according to their MP3 tags. Useful to organize your music library.",
+                  technologies: "Java, Maven, mp3agic Java library.",
+                  link: "https://github.com/digma89/JAVA_MP3_MetaSetter"
               };
               slides.push({
                   image: '../assets/imgs/slider/Proyecto7/7-1.png',
@@ -226,12 +214,10 @@
           $scope.addSlide = function() {
               var newWidth = 600 + slides.length + 1;
               $scope.info = {
-                  proyecto: "Oficinas MMM",
-                  app: "Gobierno + Privado",
-                  technologies: "Colonia Guerrero México D.F.",
-                  link: "16,806 m\u00b2",
-                  tipo: "Oficinas",
-                  estatus: "Proyecto entregado."
+                  proyecto: "Samsung Heroes",
+                  app: "Two Android applications one for a smartphone or tablet the other one for the Samsung printer series MX7 and a cloud server used to store PDF files. The project was developed for Samsung, the android apps are capable to store PDF files in the cloud and is also accesible via web.  The users can access the files through their smartphone or tablet and print it at anytime, because it sends the files through internet. (Won the technology fair. April 2016).",
+                  technologies: "Android, JavaEE, MongoDB and WildFly application server.",
+                  link: ""
               };
 
               slides.push({

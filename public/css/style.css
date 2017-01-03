@@ -149,19 +149,22 @@
    }
    
    .leftDiv {
-       width: 33%;
+       width: 43%;
        float: left;
    }
    
    .rigthDiv {
-       width: 63%;
+       width: 53%;
        float: right;
+   }
+   
+   .canvas_div {
+       height: 50vh;
    }
    
    .canvasGraph {
        max-width: inherit;
        max-height: inherit;
-       /*max-height: 400px;*/
        color: #fff;
        padding: 20px;
        border-radius: 3px;
@@ -205,12 +208,12 @@
    }
    
    .about_Text_b {
-       font-size: 1.2em;
+       font-size: 15px;
        font-family: Roboto, arial, helvetica;
        font-weight: 100;
        color: #000;
        margin: 0;
-       padding: 0;
+       padding: 10px;
    }
    
    .about_subTitle_b {

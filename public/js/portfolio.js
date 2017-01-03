@@ -1,7 +1,7 @@
+         var myChart = null;
+
          $(window).load(function() {
-             createChart(500);
              portafolio();
-             createChart(500);
          });
 
          $(document).ready(function() {
@@ -14,14 +14,20 @@
                  fadingEffect: false,
                  //scrollOverflow: true,
                  'afterLoad': function(anchorLink, index) {
-
+                     if (index != 2) {
+                         if (myChart != null) {
+                             myChart.destroy();
+                             myChart = null;
+                         }
+                     }
                      if (index == 2) {
-                         createChart();
-
+                         if (myChart == null) {
+                             createChart(5000);
+                         }
                      }
                  },
                  'afterResize': function() {
-                     createChart();
+
                  },
              });
 
@@ -45,14 +51,10 @@
              });
          }
 
-
          function createChart(duration = 5000) {
-             var windowHeight = $(window).height();
-             Chart.defaults.global.animation.duration = duration;
+             Chart.defaults.global.animation.duration = 5000;
              var ctx = document.getElementById("myChart");
-             // ctx.width = $("#parent").width();
-             ctx.height = windowHeight / 1.6;
-             var myChart = new Chart(ctx, {
+             myChart = new Chart(ctx, {
                  type: 'radar',
                  scaleStartValue: 0,
                  axisX: {
@@ -62,7 +64,6 @@
                      labels: ["CSS", "JavaScript", "Angular", "Node", "HTML", "JQuery", "PHP", "SQL", ".Net"],
                      fontColor: "#fff",
                      datasets: [{
-
                          label: "My skills",
                          backgroundColor: "rgba(83,124,205,.4)",
                          borderColor: "rgba(83,124,205,1)",
@@ -70,11 +71,12 @@
                          pointBorderColor: "#fff",
                          pointHoverBackgroundColor: "#fff",
                          pointHoverBorderColor: "rgba(83,124,205,1)",
-
                          data: [100, 90, 85, 80, 100, 90, 80, 85, 70]
                      }],
                  },
                  options: {
+                     responsive: true,
+                     maintainAspectRatio: false,
                      legend: {
                          display: true,
                          labels: {
