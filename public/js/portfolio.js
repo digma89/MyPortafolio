@@ -14,13 +14,23 @@
                  fadingEffect: false,
                  //scrollOverflow: true,
                  'afterLoad': function(anchorLink, index) {
+                     if (index != 3) {
+                         $(".portfolio-item").removeClass("animationSee");
+                     }
                      if (index != 2) {
+                         $("#cardAbout").removeClass("animationSee");
                          if (myChart != null) {
                              myChart.destroy();
                              myChart = null;
                          }
                      }
+
+                     if (index == 3) {
+                         $(".portfolio-item").addClass("animationSee");
+                     }
+
                      if (index == 2) {
+                         $("#cardAbout").addClass("animationSee");
                          if (myChart == null) {
                              createChart(5000);
                          }
@@ -61,7 +71,7 @@
                      fontSize: 50
                  },
                  data: {
-                     labels: ["CSS", "JavaScript", "Angular", "Node", "HTML", "JQuery", "PHP", "SQL", ".Net"],
+                     labels: ["CSS", "JavaScript", "AngularJs", "NodeJs", "HTML", "JQuery", "PHP", "SQL", ".Net"],
                      fontColor: "#fff",
                      datasets: [{
                          label: "My skills",
