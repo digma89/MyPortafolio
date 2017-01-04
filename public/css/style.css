@@ -402,7 +402,7 @@
    }
    
    .img-carousel-b {
-       width: 100%;
+       max-height: 430px;
    }
    
    .sliderR {
