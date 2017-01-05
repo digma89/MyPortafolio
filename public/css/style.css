@@ -425,6 +425,38 @@
        padding: 20px;
    }
    /*************************
+********* Contact ******
+**************************/
+   
+   .control-label {
+       padding: 5px;
+       font-weight: 100;
+       font-family: Roboto, arial, helvetica;
+   }
+   
+   .formInputs {
+       padding: 5px;
+   }
+   
+   .btn-default {
+       border-radius: 2px !important;
+       float: right;
+       transition: all 0.9s ease 0s;
+       -moz-transition: all 0.9s ease 0s;
+       -webkit-transition: all 0.9s ease 0s;
+       -o-transition: all 0.9s ease 0s;
+   }
+   
+   .btn-default:hover,
+   .btn-default:focus,
+   .btn-default:active,
+   .btn-default.active,
+   .open>.dropdown-toggle.btn-default {
+       color: #fff !important;
+       background: #537CCD !important;
+       border: 1px solid #537CCD !important;
+   }
+   /*************************
 ********* Responsice CSS ******
 **************************/
    /* lg */
@@ -472,6 +504,17 @@
            max-width: 250px;
            height: 140px;
        }
+       /*************************
+********* Contact ******
+**************************/
+       .contact_Title_b {
+           font-size: 4em;
+           font-family: Roboto, arial, helvetica;
+           font-weight: 300;
+           color: #000;
+           margin: 0;
+           padding: 30px;
+       }
    }
    /* md */
    
@@ -517,6 +560,17 @@
            position: relative;
            max-width: 250px;
            height: 140px;
+       }
+       /*************************
+********* Contact ******
+**************************/
+       .contact_Title_b {
+           font-size: 4em;
+           font-family: Roboto, arial, helvetica;
+           font-weight: 300;
+           color: #000;
+           margin: 0;
+           padding: 30px;
        }
    }
    /* sm */
@@ -564,6 +618,17 @@
            max-width: 250px;
            height: 130px;
        }
+       /*************************
+********* Contact ******
+**************************/
+       .contact_Title_b {
+           font-size: 4em;
+           font-family: Roboto, arial, helvetica;
+           font-weight: 300;
+           color: #000;
+           margin: 0;
+           padding: 30px;
+       }
    }
    /* xs */
    
@@ -610,6 +675,20 @@
            max-width: 250px;
            height: 120px;
        }
+       /*************************
+********* Contact ******
+**************************/
+       .contact_Title_b {
+           font-size: 2.5em;
+           font-family: Roboto, arial, helvetica;
+           font-weight: 300;
+           color: #000;
+           margin: 0;
+           padding: 0px;
+       }
+       #section3 {
+           padding: 10px !important;
+       }
    }
    /* XS Portrait */
    
@@ -655,5 +734,25 @@
            position: relative;
            max-width: 250px;
            height: 100px;
+       }
+       /*************************
+********* Contact ******
+**************************/
+       .contact_Title_b {
+           font-size: 2em;
+           font-family: Roboto, arial, helvetica;
+           font-weight: 300;
+           color: #000;
+           margin: 0;
+           padding: 5px;
+       }
+       #section3 {
+           padding: 10px !important;
+       }
+       .panel-body {
+           padding: 0px !important;
+       }
+       .formInputs {
+           padding: 0px !important;
        }
    }

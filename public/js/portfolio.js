@@ -10,7 +10,7 @@
                  /* sectionsColor: ['#34394E', '#34394E', '#D7E3ED', '#34394E'],*/
                  'navigation': true,
                  'navigationPosition': 'right',
-                 'navigationTooltips': ['Home', 'About', 'Projects', 'Simple'],
+                 'navigationTooltips': ['Home', 'About', 'Projects', 'Contact'],
                  fadingEffect: false,
                  //scrollOverflow: true,
                  'afterLoad': function(anchorLink, index) {
