@@ -119,7 +119,7 @@
                   proyecto: 'Old Portfolio',
                   app: "My first portfolio, just playing around with NodeJs and Bootstrap.",
                   technologies: "HTML5, CSS3, NodeJs and Bootstrap.",
-                  link: "https://dr-old-portafolio.herokuapp.com/",
+                  link: "https://dr-old-portfolio.herokuapp.com/",
               };
 
               slides.push({
